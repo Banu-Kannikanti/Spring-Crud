@@ -1,4 +1,4 @@
 FROM openjdk:8
-EXPOSE 8080
-ADD target/Docker-Jenkins-1.jar Docker-Jenkins-1.jar
-ENTRYPOINT ["java","-jar","/Docker-Jenkins-1.jar"]
+EXPOSE 8081
+ADD target/spring-boot-docker-maven.jar spring-boot-docker-maven.jar
+ENTRYPOINT ["java","-jar","spring-boot-docker-maven.jar"]
